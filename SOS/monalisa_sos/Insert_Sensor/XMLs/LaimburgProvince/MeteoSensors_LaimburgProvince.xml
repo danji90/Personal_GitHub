@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<swes:InsertSensor service="SOS" version="2.0.0"
+	xmlns:swes="http://www.opengis.net/swes/2.0" xmlns:sos="http://www.opengis.net/sos/2.0"
+	xmlns:swe="http://www.opengis.net/swe/2.0" xmlns:sml="http://www.opengis.net/sensorml/2.0"
+	xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gco="http://www.isotc211.org/2005/gco"
+	xmlns:gmd="http://www.isotc211.org/2005/gmd"
+	xsi:schemaLocation="http://www.opengis.net/sos/2.0 
+	http://schemas.opengis.net/swes/2.0/swes.xsd
+	http://schemas.opengis.net/sos/2.0/sosInsertSensor.xsd 
+	http://www.opengis.net/swes/2.0 
+	http://schemas.opengis.net/sensorML/2.0/sensorML.xsd
+	http://schemas.opengis.net/swes/2.0/swes.xsd">
+	<swes:procedureDescriptionFormat>http://www.opengis.net/sensorml/2.0</swes:procedureDescriptionFormat>
+	<swes:procedureDescription>
+		<sml:PhysicalSystem gml:id="MeteoSensors_LaimburgProvince">
+			<gml:identifier codeSpace="uniqueID">MeteoSensors_LaimburgProvince</gml:identifier>
+			<sml:identification>
+				<sml:IdentifierList>
+					<sml:identifier>
+						<sml:Term definition="urn:ogc:def:identifier:OGC:1.0:longName">
+							<sml:label>longName</sml:label>
+							<sml:value>Meteo Sensors of the Province - Laimburg station Pfatten Vadena</sml:value>
+						</sml:Term>
+					</sml:identifier>
+					<sml:identifier>
+						<sml:Term definition="urn:ogc:def:identifier:OGC:1.0:shortName">
+							<sml:label>shortName</sml:label>
+							<sml:value>Meteo LaimburgProvince</sml:value>
+						</sml:Term>
+					</sml:identifier>
+				</sml:IdentifierList>
+			</sml:identification>
+			<sml:capabilities name="offerings">
+				<sml:CapabilityList>
+					<sml:capability name="offeringID">
+						<swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+							<swe:label>min10_LaimburgProvince</swe:label>
+							<swe:value>min10_LaimburgProvince</swe:value>
+						</swe:Text>
+					</sml:capability>
+					<sml:capability name="offeringID">
+						<swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+							<swe:label>daily_LaimburgProvince</swe:label>
+							<swe:value>daily_LaimburgProvince</swe:value>
+						</swe:Text>
+					</sml:capability>
+					<sml:capability name="offeringID">
+						<swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+							<swe:label>min5_LaimburgProvince</swe:label>
+							<swe:value>min5_LaimburgProvince</swe:value>
+						</swe:Text>
+					</sml:capability>
+				</sml:CapabilityList>
+			</sml:capabilities>
+			<sml:featuresOfInterest>
+				<sml:FeatureList
+					definition="http://www.opengis.net/def/featureOfInterest/identifier">
+					<swe:label>featuresOfInterest</swe:label>
+					<sml:feature
+						xlink:href="http://sdcgbe01.eurac.edu:8083/52n-sos-webapp/service/rest/features/LaimburgProvince" />
+				</sml:FeatureList>
+			</sml:featuresOfInterest>
+			<sml:inputs>
+				<sml:InputList>
+					<sml:input name="Global_Radiation">
+						<sml:ObservableProperty definition="Global_Radiation" />
+					</sml:input>
+					<sml:input name="Atmospherical_Pressure">
+						<sml:ObservableProperty definition="Atmospherical_Pressuret" />
+					</sml:input>
+					<sml:input name="Air_Humidity">
+						<sml:ObservableProperty definition="Air_Humidity" />
+					</sml:input>
+					<sml:input name="Air_Temperature">
+						<sml:ObservableProperty definition="Air_Temperature" />
+					</sml:input>
+					<sml:input name="Sunshine_Duration">
+						<sml:ObservableProperty definition="Sunshine_Duradiation" />
+					</sml:input>
+					<sml:input name="Dew_Point">
+						<sml:ObservableProperty definition="Dew_Point" />
+					</sml:input>
+					<sml:input name="Wind_Speed">
+						<sml:ObservableProperty definition="Wind_Speed" />
+					</sml:input>
+					<sml:input name="Wind_Direction">
+						<sml:ObservableProperty definition="Wind_Direction" />
+					</sml:input>
+					<sml:input name="Precipitation">
+						<sml:ObservableProperty definition="Precipitation" />
+					</sml:input>					
+				</sml:InputList>
+			</sml:inputs>
+			<sml:outputs>
+				<sml:OutputList>
+					<sml:output name="GR_10min_avg">
+						<swe:Category definition="Global_Radiation_10min_Average">
+							<swe:codeSpace xlink:href="NOT_DEFINED" />
+						</swe:Category>
+					</sml:output>
+					<sml:output name="AP_10min_avg">
+						<swe:Category definition="Atmospherical_Pressure_10min_Average">
+							<swe:codeSpace xlink:href="NOT_DEFINED" />
+						</swe:Category>
+					</sml:output>
+					<sml:output name="AH_10min_avg">
+						<swe:Category definition="Air_Humidity_10min_Average">
+							<swe:codeSpace xlink:href="NOT_DEFINED" />
+						</swe:Category>
+					</sml:output>
+					<sml:output name="AT_10min_avg">
+						<swe:Category definition="Air_Temperature_10min_Average">
+							<swe:codeSpace xlink:href="NOT_DEFINED" />
+						</swe:Category>
+					</sml:output>
+					<sml:output name="SD_10min_avg">
+						<swe:Category definition="Sunshine_Duration_10min_Average">
+							<swe:codeSpace xlink:href="NOT_DEFINED" />
+						</swe:Category>
+					</sml:output>
+					<sml:output name="DP_10min_avg">
+						<swe:Category definition="Dew_Point_10min_Average">
+							<swe:codeSpace xlink:href="NOT_DEFINED" />
+						</swe:Category>
+					</sml:output>
+					<sml:output name="WS_10min_avg">
+						<swe:Category definition="Wind_Speed_10min_Average">
+							<swe:codeSpace xlink:href="NOT_DEFINED" />
+						</swe:Category>
+					</sml:output>
+					<sml:output name="WD_10min_avg">
+						<swe:Category definition="Wind_Direction_10min_Average">
+							<swe:codeSpace xlink:href="NOT_DEFINED" />
+						</swe:Category>
+					</sml:output>
+					<sml:output name="P_5min_sum">
+						<swe:Category definition="Precipitation_5min_Sum">
+							<swe:codeSpace xlink:href="NOT_DEFINED" />
+						</swe:Category>
+					</sml:output>
+					<sml:output name="AT_daily_max">
+						<swe:Category definition="Air_Temperature_daily_Maximum">
+							<swe:codeSpace xlink:href="NOT_DEFINED" />
+						</swe:Category>
+					</sml:output>
+					<sml:output name="AT_daily_min">
+						<swe:Category definition="Air_Temperature_daily_Minimum">
+							<swe:codeSpace xlink:href="NOT_DEFINED" />
+						</swe:Category>
+					</sml:output>
+					<sml:output name="GR_daily_avg">
+						<swe:Category definition="Global_Radiation_daily_Average">
+							<swe:codeSpace xlink:href="NOT_DEFINED" />
+						</swe:Category>
+					</sml:output>
+					<sml:output name="AP_daily_avg">
+						<swe:Category definition="Atmospherical_Pressure_daily_Average">
+							<swe:codeSpace xlink:href="NOT_DEFINED" />
+						</swe:Category>
+					</sml:output>
+					<sml:output name="AH_daily_avg">
+						<swe:Category definition="Air_Humidity_daily_Average">
+							<swe:codeSpace xlink:href="NOT_DEFINED" />
+						</swe:Category>
+					</sml:output>
+					<sml:output name="AT_daily_avg">
+						<swe:Category definition="Air_temperature_daily_Average">
+							<swe:codeSpace xlink:href="NOT_DEFINED" />
+						</swe:Category>
+					</sml:output>
+					<sml:output name="P_daily_sum">
+						<swe:Category definition="Precipitation_daily_Sum">
+							<swe:codeSpace xlink:href="NOT_DEFINED" />
+						</swe:Category>
+					</sml:output>
+					<sml:output name="WS_daily_avg">
+						<swe:Category definition="Wind_Speed_daily_Average">
+							<swe:codeSpace xlink:href="NOT_DEFINED" />
+						</swe:Category>
+					</sml:output>
+				</sml:OutputList>
+			</sml:outputs>
+			<sml:position>
+				<swe:Vector referenceFrame="urn:ogc:def:crs:EPSG::4326">
+					<swe:coordinate name="easting">
+						<swe:Quantity axisID="x">
+							<swe:uom code="degree" />
+							<swe:value>11.288711</swe:value>
+						</swe:Quantity>
+					</swe:coordinate>
+					<swe:coordinate name="northing">
+						<swe:Quantity axisID="y">
+							<swe:uom code="degree" />
+							<swe:value>46.382457</swe:value>
+						</swe:Quantity>
+					</swe:coordinate>
+					<swe:coordinate name="altitude">
+						<swe:Quantity axisID="z">
+							<swe:uom code="m" />
+							<swe:value>224</swe:value>
+						</swe:Quantity>
+					</swe:coordinate>
+				</swe:Vector>
+			</sml:position>			
+		</sml:PhysicalSystem>
+	</swes:procedureDescription>
+	<swes:observableProperty>GR_10min_avg</swes:observableProperty> 
+	<swes:observableProperty>AP_10min_avg</swes:observableProperty> 
+	<swes:observableProperty>AH_10min_avg</swes:observableProperty>
+	<swes:observableProperty>AT_10min_avg</swes:observableProperty>
+	<swes:observableProperty>SD_10min_avg</swes:observableProperty>
+	<swes:observableProperty>DP_10min_avg</swes:observableProperty>
+	<swes:observableProperty>WS_10min_avg</swes:observableProperty>
+	<swes:observableProperty>WD_10min_avg</swes:observableProperty>
+	<swes:observableProperty>P_5min_sum</swes:observableProperty>
+	<swes:observableProperty>AT_daily_max</swes:observableProperty>
+	<swes:observableProperty>AT_daily_min</swes:observableProperty>
+	<swes:observableProperty>GR_daily_avg</swes:observableProperty>
+	<swes:observableProperty>AP_daily_avg</swes:observableProperty>
+	<swes:observableProperty>AH_daily_avg</swes:observableProperty>
+	<swes:observableProperty>AT_daily_avg</swes:observableProperty>
+	<swes:observableProperty>P_daily_sum</swes:observableProperty>
+	<swes:observableProperty>WS_daily_avg</swes:observableProperty>
+	<swes:metadata>
+		<sos:SosInsertionMetadata>
+			<sos:observationType>http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement</sos:observationType>
+			<sos:featureOfInterestType>http://www.opengis.net/def/samplingFeatureType/OGC-OM/2.0/SF_SamplingPoint</sos:featureOfInterestType>
+		</sos:SosInsertionMetadata>
+	</swes:metadata>
+</swes:InsertSensor>

@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='utf-8'?>
+<swes:InsertSensor xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:sml="http://www.opengis.net/sensorml/2.0" xmlns:sos="http://www.opengis.net/sos/2.0" xmlns:swe="http://www.opengis.net/swe/2.0" xmlns:swes="http://www.opengis.net/swes/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="SOS" version="2.0.0" xsi:schemaLocation="http://www.opengis.net/sos/2.0   http://schemas.opengis.net/swes/2.0/swes.xsd  http://schemas.opengis.net/sos/2.0/sosInsertSensor.xsd   http://www.opengis.net/swes/2.0   http://schemas.opengis.net/sensorML/2.0/sensorML.xsd  http://schemas.opengis.net/swes/2.0/swes.xsd">
+	<swes:procedureDescriptionFormat>http://www.opengis.net/sensorml/2.0</swes:procedureDescriptionFormat>
+	<swes:procedureDescription>
+		<sml:PhysicalSystem gml:id="SoilWaterContentReflectometer_dopas2000">
+			<gml:identifier codeSpace="uniqueID">SoilWaterContentReflectometer_dopas2000</gml:identifier>
+			<sml:identification>
+				<sml:IdentifierList>
+					<sml:identifier>
+						<sml:Term definition="urn:ogc:def:identifier:OGC:1.0:longName">
+							<sml:label>longName</sml:label>
+							<sml:value>EURAC_GS_SoilWaterContentReflectometer_dopas2000</sml:value>
+						</sml:Term>
+					</sml:identifier>
+					<sml:identifier>
+						<sml:Term definition="urn:ogc:def:identifier:OGC:1.0:shortName">
+							<sml:label>shortName</sml:label>
+							<sml:value>SoilWaterContentReflectometer_dopas2000</sml:value>
+						</sml:Term>
+					</sml:identifier>
+				</sml:IdentifierList>
+			</sml:identification>
+			<sml:capabilities name="offerings">
+				<sml:CapabilityList>
+					<sml:capability name="offeringID">
+						<swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+							<swe:label>ST_dopas2000</swe:label>
+							<swe:value>ST_dopas2000</swe:value>
+						</swe:Text>
+					</sml:capability>
+					<sml:capability name="offeringID">
+						<swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+							<swe:label>SWC_dopas2000</swe:label>
+							<swe:value>SWC_dopas2000</swe:value>
+						</swe:Text>
+					</sml:capability>
+				</sml:CapabilityList>
+			</sml:capabilities>
+			<sml:featuresOfInterest>
+				<sml:FeatureList definition="http://www.opengis.net/def/featureOfInterest/identifier">
+					<swe:label>featuresOfInterest</swe:label>
+					<sml:feature xlink:href="http://10.8.244.26:8080/52n-test/service/rest/sensors/SoilWaterContentReflectometer_dopas2000" />
+				</sml:FeatureList>
+			</sml:featuresOfInterest>
+			<sml:inputs>
+				<sml:InputList>
+					<sml:input name="Soil_Temperature">
+						<sml:ObservableProperty definition="Soil_Temperature" />
+					</sml:input>
+					<sml:input name="Soil_Water_Content">
+						<sml:ObservableProperty definition="Soil_Water_Content" />
+					</sml:input>
+				</sml:InputList>
+			</sml:inputs>
+			<sml:outputs>
+				<sml:OutputList>
+					<sml:output name="ST_2cm">
+						<swe:Category definition="Soil_Temperature_2cm">
+							<swe:codeSpace xlink:href="NOT_DEFINED" />
+						</swe:Category>
+					</sml:output>
+					<sml:output name="ST_5cm">
+						<swe:Category definition="Soil_Temperature_5cm">
+							<swe:codeSpace xlink:href="NOT_DEFINED" />
+						</swe:Category>
+					</sml:output>
+					<sml:output name="ST_20cm">
+						<swe:Category definition="Soil_Temperature_20cm">
+							<swe:codeSpace xlink:href="NOT_DEFINED" />
+						</swe:Category>
+					</sml:output>
+					<sml:output name="SWC_2cm">
+						<swe:Category definition="Soil_Water_Content_2cm">
+							<swe:codeSpace xlink:href="NOT_DEFINED" />
+						</swe:Category>
+					</sml:output>
+					<sml:output name="SWC_5cm">
+						<swe:Category definition="Soil_Water_Content_5cm">
+							<swe:codeSpace xlink:href="NOT_DEFINED" />
+						</swe:Category>
+					</sml:output>
+					<sml:output name="SWC_20cm">
+						<swe:Category definition="Soil_Water_Content_20cm">
+							<swe:codeSpace xlink:href="NOT_DEFINED" />
+						</swe:Category>
+					</sml:output>
+				</sml:OutputList>
+			</sml:outputs>
+			<sml:position>
+				<swe:Vector referenceFrame="urn:ogc:def:crs:EPSG::4326">
+					<swe:coordinate name="easting">
+						<swe:Quantity axisID="x">
+							<swe:uom code="degree" />
+							<swe:value>11.4480640</swe:value>
+						</swe:Quantity>
+					</swe:coordinate>
+					<swe:coordinate name="northing">
+						<swe:Quantity axisID="y">
+							<swe:uom code="degree" />
+							<swe:value>46.3495330</swe:value>
+						</swe:Quantity>
+					</swe:coordinate>
+					<swe:coordinate name="altitude">
+						<swe:Quantity axisID="z">
+							<swe:uom code="m" />
+							<swe:value>2062</swe:value>
+						</swe:Quantity>
+					</swe:coordinate>
+				</swe:Vector>
+			</sml:position>
+
+		</sml:PhysicalSystem>
+	</swes:procedureDescription>
+	<swes:observableProperty>ST_2cm</swes:observableProperty> 
+	<swes:observableProperty>ST_5cm</swes:observableProperty> 
+	<swes:observableProperty>ST_20cm</swes:observableProperty>
+	<swes:observableProperty>SWC_2cm</swes:observableProperty>
+	<swes:observableProperty>SWC_5cm</swes:observableProperty>
+	<swes:observableProperty>SWC_20cm</swes:observableProperty>
+	<swes:metadata>
+		<sos:SosInsertionMetadata>
+			<sos:observationType>http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement</sos:observationType>
+			<sos:featureOfInterestType>http://www.opengis.net/def/samplingFeatureType/OGC-OM/2.0/SF_SamplingPoint</sos:featureOfInterestType>
+		</sos:SosInsertionMetadata>
+	</swes:metadata>
+</swes:InsertSensor>

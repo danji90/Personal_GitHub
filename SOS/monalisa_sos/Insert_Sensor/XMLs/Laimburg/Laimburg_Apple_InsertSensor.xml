@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<swes:InsertSensor service="SOS" version="2.0.0"
+    xmlns:swes="http://www.opengis.net/swes/2.0"
+    xmlns:sos="http://www.opengis.net/sos/2.0"
+    xmlns:swe="http://www.opengis.net/swe/2.0"
+    xmlns:sml="http://www.opengis.net/sensorml/2.0"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:gco="http://www.isotc211.org/2005/gco"
+    xmlns:gmd="http://www.isotc211.org/2005/gmd" xsi:schemaLocation="http://www.opengis.net/sos/2.0 http://schemas.opengis.net/sos/2.0/sosInsertSensor.xsd   http://www.opengis.net/swes/2.0 http://schemas.opengis.net/swes/2.0/swes.xsd">
+    <swes:procedureDescriptionFormat>http://www.opengis.net/sensorml/2.0</swes:procedureDescriptionFormat>
+    <swes:procedureDescription>
+        <sml:PhysicalSystem gml:id="Apple_Laimburg_Laboratory">
+            <!--Unique identifier -->
+            <gml:identifier codeSpace="uniqueID">Apple_Laimburg_Laboratory</gml:identifier>
+            <sml:identification>
+                <sml:IdentifierList>
+                    <sml:identifier>
+                        <sml:Term definition="urn:ogc:def:identifier:OGC:1.0:longName">
+                            <sml:label>longName</sml:label>
+                            <sml:value>Research Centre for Agricolture and Forestry - Laboratory Laimburg</sml:value>
+                        </sml:Term>
+                    </sml:identifier>
+                    <sml:identifier>
+                        <sml:Term definition="urn:ogc:def:identifier:OGC:1.0:shortName">
+                            <sml:label>shortName</sml:label>
+                            <sml:value>Apple - Laimburg</sml:value>
+                        </sml:Term>
+                    </sml:identifier>
+                </sml:IdentifierList>
+            </sml:identification>
+            <sml:capabilities name="offerings">
+                <sml:CapabilityList>
+                    <!-- Special capabilities used to specify offerings. -->
+                    <!-- Parsed and removed during InsertSensor/UpdateSensorDescription, 
+					 added during DescribeSensor. -->
+                    <!-- Offering is generated if not specified. -->
+					<sml:capability name="harvest_op_0_sl_0">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>harvest_op_0_sl_0</swe:label>
+                            <swe:value>harvest_op_0_sl_0</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="harvest_op_0_sl_3">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>harvest_op_0_sl_3</swe:label>
+                            <swe:value>harvest_op_0_sl_3</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="harvest_op_0_sl_6">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>harvest_op_0_sl_6</swe:label>
+                            <swe:value>harvest_op_0_sl_6</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="harvest_op_0_sl_10">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>harvest_op_0_sl_10</swe:label>
+                            <swe:value>harvest_op_0_sl_10</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="harvest_op_0_sl_13">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>harvest_op_0_sl_13</swe:label>
+                            <swe:value>harvest_op_0_sl_13</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="harvest_op_0_sl_17">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>harvest_op_0_sl_17</swe:label>
+                            <swe:value>harvest_op_0_sl_17</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="harvest_op_0_sl_21">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>harvest_op_0_sl_21</swe:label>
+                            <swe:value>harvest_op_0_sl_21</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="mainCA_op_1_sl_0">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>mainCA_op_1_sl_0</swe:label>
+                            <swe:value>mainCA_op_1_sl_0</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="mainCA_op_1_sl_3">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>mainCA_op_1_sl_3</swe:label>
+                            <swe:value>mainCA_op_1_sl_3</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="mainCA_op_1_sl_6">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>mainCA_op_1_sl_6</swe:label>
+                            <swe:value>mainCA_op_1_sl_6</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="mainCA_op_1_sl_10">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>mainCA_op_1_sl_10</swe:label>
+                            <swe:value>mainCA_op_1_sl_10</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="mainCA_op_1_sl_12">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>mainCA_op_1_sl_12</swe:label>
+                            <swe:value>mainCA_op_1_sl_12</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="mainCA_op_1_sl_14">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>mainCA_op_1_sl_14</swe:label>
+                            <swe:value>mainCA_op_1_sl_14</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="mainCA_op_2_sl_0">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>mainCA_op_2_sl_0</swe:label>
+                            <swe:value>mainCA_op_2_sl_0</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="mainCA_op_2_sl_3">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>mainCA_op_2_sl_3</swe:label>
+                            <swe:value>mainCA_op_2_sl_3</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="mainCA_op_2_sl_6">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>mainCA_op_2_sl_6</swe:label>
+                            <swe:value>mainCA_op_2_sl_6</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="mainCA_op_2_sl_10">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>mainCA_op_2_sl_10</swe:label>
+                            <swe:value>mainCA_op_2_sl_10</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="mainCA_op_3_sl_0">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>mainCA_op_3_sl_0</swe:label>
+                            <swe:value>mainCA_op_3_sl_0</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="mainCA_op_3_sl_3">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>mainCA_op_3_sl_3</swe:label>
+                            <swe:value>mainCA_op_3_sl_3</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="mainCA_op_3_sl_6">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>mainCA_op_3_sl_6</swe:label>
+                            <swe:value>mainCA_op_3_sl_6</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="mainCA_op_3_sl_10">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>mainCA_op_3_sl_10</swe:label>
+                            <swe:value>mainCA_op_3_sl_10</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="mainCA_op_4_sl_0">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>mainCA_op_4_sl_0</swe:label>
+                            <swe:value>mainCA_op_4_sl_0</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="mainCA_op_4_sl_3">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>mainCA_op_4_sl_3</swe:label>
+                            <swe:value>mainCA_op_4_sl_3</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="mainCA_op_4_sl_6">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>mainCA_op_4_sl_6</swe:label>
+                            <swe:value>mainCA_op_4_sl_6</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="mainCA_op_4_sl_10">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>mainCA_op_4_sl_10</swe:label>
+                            <swe:value>mainCA_op_4_sl_10</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="mainCA_op_5_sl_0">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>mainCA_op_5_sl_0</swe:label>
+                            <swe:value>mainCA_op_5_sl_0</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="mainCA_op_5_sl_3">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>mainCA_op_5_sl_3</swe:label>
+                            <swe:value>mainCA_op_5_sl_3</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="mainCA_op_5_sl_6">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>mainCA_op_5_sl_6</swe:label>
+                            <swe:value>mainCA_op_5_sl_6</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="mainCA_op_5_sl_10">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>mainCA_op_5_sl_10</swe:label>
+                            <swe:value>mainCA_op_5_sl_10</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="mainCA_op_5_sl_12">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>mainCA_op_5_sl_12</swe:label>
+                            <swe:value>mainCA_op_5_sl_12</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="mainCA_op_5_sl_14">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>mainCA_op_5_sl_14</swe:label>
+                            <swe:value>mainCA_op_5_sl_14</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="mainCA_op_6_sl_0">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>mainCA_op_6_sl_0</swe:label>
+                            <swe:value>mainCA_op_6_sl_0</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="mainCA_op_6_sl_3">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>mainCA_op_6_sl_3</swe:label>
+                            <swe:value>mainCA_op_6_sl_3</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="mainCA_op_6_sl_6">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>mainCA_op_6_sl_6</swe:label>
+                            <swe:value>mainCA_op_6_sl_6</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="mainCA_op_6_sl_8">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>mainCA_op_6_sl_8</swe:label>
+                            <swe:value>mainCA_op_6_sl_0</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="mainCA_op_6_sl_10">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>mainCA_op_6_sl_10</swe:label>
+                            <swe:value>mainCA_op_6_sl_10</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="CA2_op_2_sl_0">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>CA2_op_2_sl_0</swe:label>
+                            <swe:value>CA2_op_2_sl_0</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="CA2_op_2_sl_6">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>CA2_op_2_sl_6</swe:label>
+                            <swe:value>CA2_op_2_sl_6</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="CA2_op_4_sl_0">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>CA2_op_4_sl_0</swe:label>
+                            <swe:value>CA2_op_4_sl_0</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="CA2_op_4_sl_6">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>CA2_op_4_sl_6</swe:label>
+                            <swe:value>CA2_op_4_sl_6</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="CA2_op_6_sl_0">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>CA2_op_6_sl_0</swe:label>
+                            <swe:value>CA2_op_6_sl_0</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="CA2_op_6_sl_6">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>CA2_op_6_sl_6</swe:label>
+                            <swe:value>CA2_op_6_sl_6</swe:value>
+                        </swe:Text>
+                    </sml:capability>
+					<sml:capability name="CA2_op_6_sl_9">
+                        <swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+                            <swe:label>CA2_op_6_sl_9</swe:label>
+                            <swe:value>CA2_op_6_sl_9</swe:value>
+                        </swe:Text>
+                    </sml:capability>		
+                </sml:CapabilityList>
+            </sml:capabilities>
+            <sml:featuresOfInterest>
+                <sml:FeatureList definition="http://www.opengis.net/def/featureOfInterest/identifier">
+                    <swe:label>laimburg_laboratory</swe:label>
+                    <sml:feature xlink:href="NOT_DEFINED"/>
+                </sml:FeatureList>
+            </sml:featuresOfInterest>
+            <sml:inputs>
+                <sml:InputList>
+                    <sml:input name="diamenter">
+                        <sml:ObservableProperty definition="diameter"/>
+                    </sml:input>
+					<sml:input name="weight">
+                        <sml:ObservableProperty definition="weight"/>
+                    </sml:input>
+					<sml:input name="firmness">
+                        <sml:ObservableProperty definition="firmness"/>
+                    </sml:input>
+					<sml:input name="F0">
+                        <sml:ObservableProperty definition="F0"/>
+                    </sml:input>
+					<sml:input name="Skin">
+                        <sml:ObservableProperty definition="Skin"/>
+                    </sml:input>
+					<sml:input name="Flesh">
+                        <sml:ObservableProperty definition="Flesh"/>
+                    </sml:input>
+					<sml:input name="Maximum_Load">
+                        <sml:ObservableProperty definition="Maximum Load"/>
+                    </sml:input>
+					<sml:input name="Work_to_Maximum_Load">
+                        <sml:ObservableProperty definition="Work to Maximum Load"/>
+                    </sml:input>
+					<sml:input name="Load_at_Limit">
+                        <sml:ObservableProperty definition="Load at Limit"/>
+                    </sml:input>
+					<sml:input name="Stiffness">
+                        <sml:ObservableProperty definition="Stiffness"/>
+                    </sml:input>
+                </sml:InputList>
+            </sml:inputs>
+            <sml:outputs>
+                <sml:OutputList>
+                    <sml:output name="diameter">
+                        <swe:Quantity definition="diameter">
+                            <swe:uom code="mm"/>
+                        </swe:Quantity>
+                    </sml:output>
+                    <sml:output name="weight">
+                        <swe:Quantity definition="weight">
+                            <swe:uom code="g"/>
+                        </swe:Quantity>
+                    </sml:output>
+					<sml:output name="firmness">
+                        <swe:Quantity definition="firmness">
+                            <swe:uom code="MHzg"/>
+                        </swe:Quantity>
+                    </sml:output>
+					<sml:output name="F0">
+                        <swe:Quantity definition="F0">
+                            <swe:uom code="MHz"/>
+                        </swe:Quantity>
+                    </sml:output>
+					<sml:output name="Skin">
+                        <swe:Quantity definition="Skin">
+                            <swe:uom code="reflectance"/>
+                        </swe:Quantity>
+                    </sml:output>
+					<sml:output name="Flesh">
+                        <swe:Quantity definition="Flesh">
+                            <swe:uom code="reflectance"/>
+                        </swe:Quantity>
+                    </sml:output>
+					<sml:output name="Maximum_Load">
+                        <swe:Quantity definition="Maximum Load">
+                            <swe:uom code="kgf"/>
+                        </swe:Quantity>
+                    </sml:output>
+					<sml:output name="Work_to_Maximum_Load">
+                        <swe:Quantity definition="Work to Maximum Load">
+                            <swe:uom code="J"/>
+                        </swe:Quantity>
+                    </sml:output>
+					<sml:output name="Load_at_Limit">
+                        <swe:Quantity definition="Load at Limit">
+                            <swe:uom code="N"/>
+                        </swe:Quantity>
+                    </sml:output>
+					<sml:output name="Stiffness">
+                        <swe:Quantity definition="Stiffness">
+                            <swe:uom code="N/m"/>
+                        </swe:Quantity>
+                    </sml:output>
+				</sml:OutputList>
+            </sml:outputs>
+            <sml:position>
+                <swe:Vector referenceFrame="urn:ogc:def:crs:EPSG::4326">
+                    <swe:coordinate name="easting">
+                        <swe:Quantity axisID="x">
+                            <swe:uom code="degree"/>
+                            <swe:value>11.288711</swe:value>
+                        </swe:Quantity>
+                    </swe:coordinate>
+                    <swe:coordinate name="northing">
+                        <swe:Quantity axisID="y">
+                            <swe:uom code="degree"/>
+                            <swe:value>46.382457</swe:value>
+                        </swe:Quantity>
+                    </swe:coordinate>
+                    <swe:coordinate name="altitude">
+                        <swe:Quantity axisID="z">
+                            <swe:uom code="m"/>
+                            <swe:value>220</swe:value>
+                        </swe:Quantity>
+                    </swe:coordinate>
+                </swe:Vector>
+            </sml:position>
+        </sml:PhysicalSystem>
+    </swes:procedureDescription>
+    <!-- multiple values possible -->
+    <swes:observableProperty>diameter</swes:observableProperty>
+    <swes:observableProperty>weight</swes:observableProperty>
+	<swes:observableProperty>firmness</swes:observableProperty>
+	<swes:observableProperty>F0</swes:observableProperty>
+	<swes:observableProperty>Skin</swes:observableProperty>
+	<swes:observableProperty>Flesh</swes:observableProperty>
+	<swes:observableProperty>Maximum_Load</swes:observableProperty>
+	<swes:observableProperty>Work_to_Maximum_Load</swes:observableProperty>
+	<swes:observableProperty>Load_at_Limit</swes:observableProperty>
+	<swes:observableProperty>Stiffness</swes:observableProperty>
+    <swes:metadata>
+        <sos:SosInsertionMetadata>
+            <sos:observationType>http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement</sos:observationType>
+			<sos:observationType>http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement</sos:observationType>
+			<sos:observationType>http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement</sos:observationType>
+			<sos:observationType>http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement</sos:observationType>
+			<sos:observationType>http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement</sos:observationType>
+			<sos:observationType>http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement</sos:observationType>
+			<sos:observationType>http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement</sos:observationType>
+			<sos:observationType>http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement</sos:observationType>
+			<sos:observationType>http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement</sos:observationType>
+            <sos:observationType>http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement</sos:observationType>
+            <!-- multiple values possible -->
+            <sos:featureOfInterestType>http://www.opengis.net/def/samplingFeatureType/OGC-OM/2.0/SF_SamplingPoint</sos:featureOfInterestType>
+        </sos:SosInsertionMetadata>
+    </swes:metadata>
+</swes:InsertSensor>

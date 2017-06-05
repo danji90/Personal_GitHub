@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<swes:InsertSensor service="SOS" version="2.0.0"
+	xmlns:swes="http://www.opengis.net/swes/2.0" xmlns:sos="http://www.opengis.net/sos/2.0"
+	xmlns:swe="http://www.opengis.net/swe/2.0" xmlns:sml="http://www.opengis.net/sensorml/2.0"
+	xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gco="http://www.isotc211.org/2005/gco"
+	xmlns:gmd="http://www.isotc211.org/2005/gmd"
+	xsi:schemaLocation="http://www.opengis.net/sos/2.0 
+	http://schemas.opengis.net/swes/2.0/swes.xsd
+	http://schemas.opengis.net/sos/2.0/sosInsertSensor.xsd 
+	http://www.opengis.net/swes/2.0 
+	http://schemas.opengis.net/sensorML/2.0/sensorML.xsd
+	http://schemas.opengis.net/swes/2.0/swes.xsd">
+	<swes:procedureDescriptionFormat>http://www.opengis.net/sensorml/2.0</swes:procedureDescriptionFormat>
+	<swes:procedureDescription>
+		<sml:PhysicalSystem gml:id="MatrixWaterPotentialSensor_Kaltern">
+			<gml:identifier codeSpace="uniqueID">MatrixWaterPotentialSensor_Kaltern</gml:identifier>
+			<sml:identification>
+				<sml:IdentifierList>
+					<sml:identifier>
+						<sml:Term definition="urn:ogc:def:identifier:OGC:1.0:longName">
+							<sml:label>longName</sml:label>
+							<sml:value>EURAC GS MatrixWaterPotentialSensor Kaltern</sml:value>
+						</sml:Term>
+					</sml:identifier>
+					<sml:identifier>
+						<sml:Term definition="urn:ogc:def:identifier:OGC:1.0:shortName">
+							<sml:label>shortName</sml:label>
+							<sml:value>MatrixWaterPotentialSensor Kaltern</sml:value>
+						</sml:Term>
+					</sml:identifier>
+				</sml:IdentifierList>
+			</sml:identification>
+			<sml:capabilities name="offerings">
+				<sml:CapabilityList>
+					<sml:capability name="offeringID">
+						<swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+							<swe:label>ST_Kaltern_matrix</swe:label>
+							<swe:value>ST_Kaltern_matrix</swe:value>
+						</swe:Text>
+					</sml:capability>
+					<sml:capability name="offeringID">
+						<swe:Text definition="urn:ogc:def:identifier:OGC:offeringID">
+							<swe:label>SWP_Kaltern</swe:label>
+							<swe:value>SWP_Kaltern</swe:value>
+						</swe:Text>
+					</sml:capability>
+				</sml:CapabilityList>
+			</sml:capabilities>
+			<sml:featuresOfInterest>
+				<sml:FeatureList
+					definition="http://www.opengis.net/def/featureOfInterest/identifier">
+					<swe:label>featuresOfInterest</swe:label>
+					<sml:feature
+						xlink:href="http://10.8.244.26:8080/52n-test/service/rest/sensors/MatrixWaterPotentialSensor_Kaltern" />
+				</sml:FeatureList>
+			</sml:featuresOfInterest>
+			<sml:inputs>
+				<sml:InputList>
+					<sml:input name="Soil_Temperature_Matrix">
+						<sml:ObservableProperty definition="Soil_Temperature_Matrix" />
+					</sml:input>
+					<sml:input name="Soil_Water_Potential">
+						<sml:ObservableProperty definition="Soil_Water_Potential" />
+					</sml:input>
+				</sml:InputList>
+			</sml:inputs>
+			<sml:outputs>
+				<sml:OutputList>
+					<sml:output name="ST_20cm">
+						<swe:Category definition="Soil_Temperature_20cm">
+							<swe:codeSpace xlink:href="NOT_DEFINED" />
+						</swe:Category>
+					</sml:output>
+					<sml:output name="ST_40cm">
+						<swe:Category definition="Soil_Temperature_40cm">
+							<swe:codeSpace xlink:href="NOT_DEFINED" />
+						</swe:Category>
+					</sml:output>
+					<sml:output name="ST_60cm">
+						<swe:Category definition="Soil_Temperature_60cm">
+							<swe:codeSpace xlink:href="NOT_DEFINED" />
+						</swe:Category>
+					</sml:output>
+					<sml:output name="SWP_20cm">
+						<swe:Category definition="Soil_Water_Potential_20cm">
+							<swe:codeSpace xlink:href="NOT_DEFINED" />
+						</swe:Category>
+					</sml:output>
+					<sml:output name="SWP_40cm">
+						<swe:Category definition="Soil_Water_Potential_40cm">
+							<swe:codeSpace xlink:href="NOT_DEFINED" />
+						</swe:Category>
+					</sml:output>
+					<sml:output name="SWP_60cm">
+						<swe:Category definition="Soil_Water_Potential_60cm">
+							<swe:codeSpace xlink:href="NOT_DEFINED" />
+						</swe:Category>
+					</sml:output>
+				</sml:OutputList>
+			</sml:outputs>
+			<sml:position>
+				<swe:Vector referenceFrame="urn:ogc:def:crs:EPSG::4326">
+					<swe:coordinate name="easting">
+						<swe:Quantity axisID="x">
+							<swe:uom code="degree" />
+							<swe:value>11.2633670</swe:value>
+						</swe:Quantity>
+					</swe:coordinate>
+					<swe:coordinate name="northing">
+						<swe:Quantity axisID="y">
+							<swe:uom code="degree" />
+							<swe:value>46.3895890</swe:value>
+						</swe:Quantity>
+					</swe:coordinate>
+					<swe:coordinate name="altitude">
+						<swe:Quantity axisID="z">
+							<swe:uom code="m" />
+							<swe:value>219</swe:value>
+						</swe:Quantity>
+					</swe:coordinate>
+				</swe:Vector>
+			</sml:position>
+	<!--
+			<sml:components>
+				<sml:ComponentList>
+					<sml:component name="Soil_Water_Content_Reflectometer"
+						xlink:title="urn:monalisa:sensors:Soil_Water_Content_Reflectometer">
+						<sml:PhysicalComponent gml:id="pc_3">
+							<sml:identification>
+								<sml:IdentifierList>
+									<sml:identifier>
+										<sml:Term>
+											<sml:label>PRODUCER</sml:label>
+											<sml:value>Decagon</sml:value>
+										</sml:Term>
+									</sml:identifier>
+									<sml:identifier>
+										<sml:Term>
+											<sml:label>INSTRUMENT</sml:label>
+											<sml:value>Matrix water potential sensor</sml:value>
+										</sml:Term>
+									</sml:identifier>
+								</sml:IdentifierList>
+							</sml:identification>
+						</sml:PhysicalComponent>
+					</sml:component>
+				</sml:ComponentList>
+			</sml:components>
+	-->
+		</sml:PhysicalSystem>
+	</swes:procedureDescription>
+	<swes:observableProperty>ST_20cm</swes:observableProperty> 
+	<swes:observableProperty>ST_40cm</swes:observableProperty>
+	<swes:observableProperty>ST_60cm</swes:observableProperty>
+	<swes:observableProperty>SWP_20cm</swes:observableProperty>
+	<swes:observableProperty>SWP_40cm</swes:observableProperty>
+	<swes:observableProperty>SWP_60cm</swes:observableProperty>
+	<swes:metadata>
+		<sos:SosInsertionMetadata>
+			<sos:observationType>http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement</sos:observationType>
+			<sos:featureOfInterestType>http://www.opengis.net/def/samplingFeatureType/OGC-OM/2.0/SF_SamplingPoint</sos:featureOfInterestType>
+		</sos:SosInsertionMetadata>
+	</swes:metadata>
+</swes:InsertSensor>
