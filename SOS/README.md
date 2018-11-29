@@ -13,7 +13,7 @@ where the data was taken from. It is used to describe the type of the measuremen
 and all observed parameters.
 
 Take a look at the GitLab repository, where you can find all Insert_Sensor xml
-files: [Sensors](https://gitlab.inf.unibz.it/REMSEN-TECHENV/SOS/tree/master/monalisa_sos/Insert_Sensor)
+files: [Sensors](https://github.com/danji90/Personal_GitHub/tree/master/SOS/monalisa_sos/Insert_Sensor)
 
 ## Observations
 The data input files are heterogenous and need different scripts to upload them
