@@ -26,7 +26,7 @@ into the database. There are different station types:
 * Eddy Covariance 
 
 The raw input files for the different station categories have different formats or structure (date/time format, measured parameters, number of columns, units etc.). 
-Therefore the [scripts](https://gitlab.inf.unibz.it/REMSEN-TECHENV/SOS/tree/master/monalisa_sos/SCRIPT_monalisa_sos) for importing data have
-to be adjusted accordingly and [templates](https://gitlab.inf.unibz.it/REMSEN-TECHENV/SOS/tree/master/monalisa_sos/Templates) for inserting observations
+Therefore the [scripts](https://github.com/danji90/Personal_GitHub/tree/master/SOS/monalisa_sos/SCRIPT_monalisa_sos) for importing data have
+to be adjusted accordingly and [templates](https://github.com/danji90/Personal_GitHub/tree/master/SOS/monalisa_sos/Templates) for inserting observations
 into different stations have to be created. Since the Beratungsring script turns out to be the most effective, new input data have to have the structure and format
-of Beratungsring data and the scripts must be based on the [offSOS_importdata_beratungsring.py](https://gitlab.inf.unibz.it/REMSEN-TECHENV/SOS/blob/master/monalisa_sos/SCRIPT_monalisa_sos/Beratungsring/offSOS_importdata_beratungsring.py).
+of Beratungsring data and the scripts must be based on the [offSOS_importdata_beratungsring.py](https://github.com/danji90/Personal_GitHub/blob/master/SOS/monalisa_sos/SCRIPT_monalisa_sos/Beratungsring/offSOS_importdata_beratungsring.py).
